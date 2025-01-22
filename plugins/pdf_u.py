@@ -27,7 +27,7 @@ def pdf_to_images_with_watermark(pdf_path, output_folder, watermark_text):
         print(f"Error converting PDF to images with watermark: {e}")
         return []
 
-@bot.on_message(filters.command('convertpdf'))
+@Client.on_message(filters.command('convertpdf'))
 async def run_bot(client: Client, message: Message):
     try:
         await message.reply_text("Please send the PDF file you want to convert to images with a watermark.")
