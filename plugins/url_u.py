@@ -18,7 +18,7 @@ def download_file(url, filename):
         print(f"Error downloading the file: {e}")
         return None
 
-@bot.on_message(filters.command('download'))
+@Client.on_message(filters.command('download'))
 async def run_bot(client: Client, message: Message):
     try:
         await message.reply_text("Please send the URL of the file you want to download.")
