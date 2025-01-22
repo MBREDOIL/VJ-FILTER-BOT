@@ -4,8 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-# Initialize the Telegram bot
-bot = Client("pdf_to_image_watermark_bot")
+
 
 # Function to convert PDF to images and add watermark
 def pdf_to_images_with_watermark(pdf_path, output_folder, watermark_text):
