@@ -3,8 +3,7 @@ import requests
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-# Initialize the Telegram bot
-bot = Client("url_downloader_bot")
+
 
 # Function to download a file from a URL
 def download_file(url, filename):
