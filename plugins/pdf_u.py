@@ -31,7 +31,7 @@ def pdf_to_images_with_watermark(pdf_path, output_folder, watermark_text):
 async def run_bot(Client, message: Message):
     try:
         await message.reply_text("Please send the PDF file you want to convert to images with a watermark.")
-        input_msg = await client.listen(message.chat.id)
+        input_msg = await Client.listen(message.chat.id)
         pdf_file = await input_msg.download()
         await input_msg.delete()
 
