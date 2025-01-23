@@ -19,7 +19,7 @@ def download_file(url, filename):
         return None
 
 @Client.on_message(filters.command('download'))
-async def run_bot(client: Client, message: Message):
+async def run_bot(bot, message: Message):
     try:
         await message.reply_text("Please send the URL of the file you want to download.")
         input_msg = await client.listen(message.chat.id)
